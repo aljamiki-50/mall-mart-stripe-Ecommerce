@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerDiv {
+    @apply bg-bgLight cursor-pointer text-gray-500 flex items-center justify-center p-1.5 rounded-full hover:bg-white border-[1px] border-gray-200 hover:border-orange-500 duration-200;
+  }
+
+  .CartDiv {
+    @apply bg-white text-orange-600 text-xs font-semibold  rounded-full absolute flex items-center shadow-xl shadow-black justify-center  -top-1 w-5 h-5 -right-2;
+  }
+/* Foooter classs  */
+  /* here social  class  */
+  .socialSpan {
+      @apply bg-slate-100 text-darkText p-1 inline-flex justify-center items-center rounded-md text-lg hover:bg-orange-600 hover:text-white  cursor-pointer duration-200
+
+  }
+}
