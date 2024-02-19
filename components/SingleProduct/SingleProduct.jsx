@@ -21,7 +21,7 @@ console.log(productData);
 
   // console.log(addToCart());
   return (
-    <div className=" grid lg:grid-cols-2 grid-cols-1 gap-5 bg-red-500 p-4 rounded-lg">
+    <div className=" grid lg:grid-cols-2 grid-cols-1 gap-5 p-4 rounded-lg">
       <div className="">
         <Image
           src={prodduct?.image}
