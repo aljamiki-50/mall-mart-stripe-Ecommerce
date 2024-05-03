@@ -57,7 +57,6 @@ const PaymentForm = () => {
 
     const data = await response.json();
     // console.log(data);
-
     // console.log("hey how you doin");
     if (response.ok) {
       dispatch(saveOrder({ order: productData, id: data?.id }));

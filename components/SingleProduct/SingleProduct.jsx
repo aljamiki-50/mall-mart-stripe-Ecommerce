@@ -15,7 +15,7 @@ const SingleOneProduct = ({ prodduct }) => {
   const dispatch = useDispatch();
   const productData = useSelector(state => state.productData);
 
-console.log(productData);
+// console.log(productData);
 
   // console.log("the add to cart",addToCart.match);
 

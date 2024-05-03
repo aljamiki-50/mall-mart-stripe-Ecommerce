@@ -18,7 +18,7 @@ const Header = () => {
   const { data: session, status, ClientSafeProvider } = useSession();
   const {productData,orderData } = useSelector((state) => state.shopping);
   const dispatch = useDispatch();
-  console.log(orderData);
+  // console.log(orderData);
 
 
   // console.log(Userinfo);
