@@ -6,9 +6,10 @@ const Sucess = () => {
   return (
     <Container classname={"flex items-center justify-center py-20"}>
       <div className=" min-[400px] flex flex-col items-center justify-center gap-y-5">
-        <h2 className=" text-4xl font-bold font-serif">
-          {" "}
-          Your Payment Accepeted By ShoppingMart.com
+        <h2 className=" text-center text-4xl font-bold font-serif">
+          <span className=" text-indigo-400">ABZ</span> 😘 your Payment has been
+          Accepted <br /> Liam Wishes ya a Nice <span className="   font-bold italic text-cyan-400">Weekend</span> <br /> Your Payment
+          Accepeted By ShoppingMart.com
         </h2>
         <p>Now you can view your Ordersor Continue shopping with us </p>
         <div className=" flex items-center gap-x-5 t">

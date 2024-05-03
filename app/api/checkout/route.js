@@ -4,6 +4,12 @@ import session from "redux-persist/lib/storage/session";
 import stripe from "stripe";
 
 export const POST = async (request) => {
+  const origin = request.headers.get("origin");
+
+  // console.log("the origin is ", origin);
+
+  // console.log(origin)
+
   // console.log("her the req",request);
 
   const stripeInstance = stripe(process.env.STRIPE_SECRET_KEY); // Initialize Stripe with your secret key
@@ -31,8 +37,8 @@ export const POST = async (request) => {
       payment_method_types: ["card"],
       line_items: extractingData,
       mode: "payment",
-      success_url: `${process.env.NEXTAUTH_URL}/success`,
-      cancel_url: `${process.env.NEXTAUTH_URL}/Error`,
+      success_url: `${origin}/success`,
+      cancel_url: `${origin}/Error`,
       metadata: {
         email,
       },
